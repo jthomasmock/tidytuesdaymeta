@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576343680951.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9EDB4C87",
+    "lastKnownWriteTime" : 1576343891,
+    "last_content_update" : 1576343891412,
+    "path" : "~/tidytuesdaymeta/R/next_week_num.R",
+    "project_path" : "R/next_week_num.R",
+    "properties" : {
+        "cursorPosition" : "3,10",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
