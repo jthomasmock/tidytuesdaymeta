@@ -23,7 +23,7 @@ create_tidytuesday_readme <- function(title, ...) {
       tidytuesdaymeta::next_tuesday(),
       "readme.md"
     ),
-    params = list(title, ...)
+    params = list(title = title, ...)
   )
 }
 
