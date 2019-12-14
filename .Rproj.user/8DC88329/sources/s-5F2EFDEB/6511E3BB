@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576346676480.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2748437822",
+    "id" : "6511E3BB",
+    "lastKnownWriteTime" : 1576347192,
+    "last_content_update" : 1576347192179,
+    "path" : "~/tidytuesdaymeta/R/create_tidytuesday_readme.R",
+    "project_path" : "R/create_tidytuesday_readme.R",
+    "properties" : {
+        "cursorPosition" : "14,41",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
