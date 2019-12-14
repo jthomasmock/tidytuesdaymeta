@@ -19,8 +19,8 @@ create_tidytuesday_readme <- function(title, ...) {
   rmarkdown::render(
     input = "static/tidytuesday_readme_template.rmd",
     output_file = here::here(
-      lubridate::year(next_tuesday),
-      next_tuesday(),
+      lubridate::year(lubridate::today()),
+      tidytuesdaymeta::next_tuesday(),
       "readme.md"
     ),
     params = list(title, ...)
