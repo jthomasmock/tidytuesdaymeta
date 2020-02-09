@@ -1,6 +1,6 @@
 # Goal of this function
 # Create a readme in the directory
-# Basic idea is use: rmarkdown::render("test_md.rmd")
+# Basic idea is use: rmarkdown::render("tidytuesday_readme_template.rmd")
 # Along with the template
 
 #' Color scale constructor for tomtom colors

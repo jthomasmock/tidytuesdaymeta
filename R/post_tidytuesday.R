@@ -12,6 +12,8 @@
 post_tidytuesday <- function(exploring, short_link) {
 
   week_num <- tidytuesdaymeta::next_week_num()
+  week_date <- tidytuesdaymeta::next_tuesday()
+  tues_year <- as.character(lubridate::year(week_date))
 
   # post the tweet with fill
   rtweet::post_tweet(
@@ -33,8 +35,8 @@ post_tidytuesday <- function(exploring, short_link) {
     media = c(
       here::here("static_img", "tt_logo.png"),
       here::here("static_img", "tt_rules.png"),
-      here::here("2019", week_date, "pic1.png"),
-      here::here("2019", week_date, "pic2.png")
+      here::here(tues_year, week_date, "pic1.png"),
+      here::here(tues_year, week_date, "pic2.png")
     )
   )
 }
