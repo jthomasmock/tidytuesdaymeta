@@ -85,7 +85,7 @@
 
 use_tidytuesday_readme <- function(title_subject, dataset_name){
 
-  raw_readme <- readLines(here::here("inst/readme_template.md"))
+  raw_readme <- readLines(here::here("static/readme_template.md"))
 
   title_subject <- title_subject
 
