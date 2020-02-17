@@ -2,11 +2,11 @@
 
 export(create_tidytuesday_dictionary)
 export(create_tidytuesday_folder)
-export(create_tidytuesday_readme)
 export(next_tuesday)
 export(next_week_num)
 export(post_tidytuesday)
 export(use_tidytuesday_readme)
+import(lubridate)
 import(whisker)
 importFrom(dplyr,mutate)
 importFrom(emo,ji)

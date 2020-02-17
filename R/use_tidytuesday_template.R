@@ -12,6 +12,7 @@
 #' @param data_name
 #' @return A logical vector indicating if file was modified.
 #' @import whisker
+#' @import lubridate
 #' @export
 #' @examples
 #'

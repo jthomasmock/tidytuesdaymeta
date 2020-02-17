@@ -32,7 +32,7 @@ post_tidytuesday <- function(exploring, short_link) {
 
     # The below code is relative to my project
     # You need to specify path to the images for tweeting
-    media = list(
+    media = c(
       here::here("static_img", "tt_logo.png"),
       here::here("static_img", "tt_rules.png"),
       here::here(tues_year, week_date, "pic1.png"),

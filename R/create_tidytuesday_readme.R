@@ -6,7 +6,6 @@
 #' Color scale constructor for tomtom colors
 #'
 #' @param title datasets for creating the data dictionary and flat files
-#' @export
 
 # Create the readme based on data
 create_tidytuesday_readme <- function(title, ...) {
