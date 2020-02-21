@@ -1,4 +1,3 @@
-
 #' Create the TidyTuesday data dictionary
 #' @importFrom dplyr mutate
 #' @importFrom tibble tibble
@@ -13,3 +12,4 @@ create_tidytuesday_dictionary <- function(x) {
         ) %>%
         knitr::kable()
 }
+

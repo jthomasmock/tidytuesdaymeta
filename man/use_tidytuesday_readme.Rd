@@ -7,16 +7,6 @@ Thank you Jenny + Sharla + Sharleen!}
 \usage{
 use_tidytuesday_readme(title_subject, dataset_name)
 }
-\arguments{
-\item{template}{Path to template file relative to `templates/`}
-
-\item{save_as}{Path of file to create, relative to root of active project.
-Defaults to `template`}
-
-\item{data}{A list of data passed to the template.}
-
-\item{open}{Open the newly created file for editing?}
-}
 \value{
 A logical vector indicating if file was modified.
 }

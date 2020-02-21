@@ -4,12 +4,6 @@
 #' Creates a file from data and a template.
 #' Combine your template file with your data.
 #'
-#' @param template Path to template file relative to `templates/`
-#' @param save_as Path of file to create, relative to root of active project.
-#'   Defaults to `template`
-#' @param data A list of data passed to the template.
-#' @param open Open the newly created file for editing?
-#' @param data_name
 #' @return A logical vector indicating if file was modified.
 #' @import whisker
 #' @import lubridate

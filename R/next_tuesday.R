@@ -1,6 +1,6 @@
 
 #' Find upcoming tuesday
-#'
+#' @importFrom lubridate wday today
 #' @export
 
 next_tuesday <- function() {

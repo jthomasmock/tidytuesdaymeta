@@ -5,7 +5,7 @@
 
 next_week_num <- function() {
   # set date for files structure and names
-  week_date <- tidytuesdaymeta::next_tuesday()
+  week_date <- next_tuesday()
   year <- lubridate::year(week_date)
   jan_1st <- paste0(year, "0101")
   jan_1st <- lubridate::ymd(jan_1st)
