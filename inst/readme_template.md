@@ -10,7 +10,6 @@ The data this week comes from []().
 {{dataset_name}} <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/{{year}}/{{tues_date}}/{{dataset_name}}.csv')
 
 # Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
-# PLEASE NOTE TO USE 2020 DATA YOU NEED TO USE tidytuesdayR version ? from GitHub
 
 # Either ISO-8601 date or year/week works!
 
