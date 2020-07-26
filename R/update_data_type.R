@@ -2,14 +2,12 @@
 #'
 #' @importFrom readr read_csv
 #' @importFrom lubridate year
-#' @importFrom dplyr `%>%``
+#' @importFrom dplyr `%>%`
+#' @importFrom readr write_csv
 #' @import dplyr
-#' @importFrom stringr str_sub str_remove
+#' @import stringr
 #' @export
-#'
-
-
-get_data_type <- function(file_names, delimiter){
+update_data_type <- function(file_names, delimiter){
   # get old data
   old_data <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/static/tt_data_type.csv")
 
@@ -28,7 +26,8 @@ get_data_type <- function(file_names, delimiter){
          data_type = stringr::str_remove(data_type, "\\.")) %>%
     dplyr::select(Week:year, data_files, data_type, delim) %>%
     dplyr::bind_rows(old_data) %>%
-    dplyr::arrange(year, Week)
+    dplyr::arrange(desc(Date))
 
-  data_df
+  data_df %>%
+    readr::write_csv("tt_data_type.csv")
 }
