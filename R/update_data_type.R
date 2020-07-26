@@ -7,6 +7,7 @@
 #' @import dplyr
 #' @import stringr
 #' @export
+
 update_data_type <- function(file_names, delimiter){
   # get old data
   old_data <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/static/tt_data_type.csv")
