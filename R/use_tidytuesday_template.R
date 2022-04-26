@@ -86,6 +86,8 @@ use_tidytuesday_readme <- function(title_subject, dataset_name){
 
   dataset_name <- dataset_name
 
+  core_url <- "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/"
+
   year <- lubridate::year(Sys.Date())
   tues_date <- tidytuesdaymeta::next_tuesday()
   week_num <- tidytuesdaymeta::next_week_num()

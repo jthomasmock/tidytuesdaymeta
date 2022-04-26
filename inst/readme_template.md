@@ -7,7 +7,7 @@ The data this week comes from []().
 ```{r}
 # Get the Data
 
-{{dataset_name}} <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/{{year}}/{{tues_date}}/{{dataset_name}}.csv')
+{{dataset_name}} <- readr::read_csv('{{core_url}}{{year}}/{{tues_date}}/{{dataset_name}}.csv')
 
 # Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
 

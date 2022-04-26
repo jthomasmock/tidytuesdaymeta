@@ -17,7 +17,7 @@ post_tidytuesday <- function(exploring, short_link, alt_add) {
 
   # post the tweet with fill
   rtweet::post_tweet(
-    token = readRDS("~/Library/Caches/rtweet/auth.rds"),
+    # token = readRDS("~/Library/Caches/rtweet/auth.rds"),
     status = glue::glue(
       "The @R4DScommunity welcomes you to week {week_num} of #TidyTuesday!  We're exploring {exploring}!
 
