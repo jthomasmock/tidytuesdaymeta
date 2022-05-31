@@ -8,7 +8,7 @@ create_tidytuesday_dictionary <- function(x) {
     tibble::tibble(variable = names(x)) %>%
         dplyr::mutate(
             class = purrr::map(x, typeof),
-            description = "."
+            description = "variable"
         ) %>%
         knitr::kable()
 }
