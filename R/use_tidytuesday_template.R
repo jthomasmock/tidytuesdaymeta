@@ -8,8 +8,6 @@
 #' @import whisker
 #' @import lubridate
 #' @export
-#' @examples
-#'
 
 # tues_date <- date
 # year <- year

@@ -4,11 +4,11 @@
 #' @importFrom knitr kable
 #' @export
 
-create_tidytuesday_dictionary <- function(x) {
+create_tt_dict <- function(x) {
     tibble::tibble(variable = names(x)) %>%
         dplyr::mutate(
             class = purrr::map(x, typeof),
-            description = "variable"
+            description = variable
         ) %>%
         knitr::kable()
 }

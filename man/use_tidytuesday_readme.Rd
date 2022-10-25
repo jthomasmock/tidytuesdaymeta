@@ -14,6 +14,3 @@ A logical vector indicating if file was modified.
 Creates a file from data and a template.
 Combine your template file with your data.
 }
-\examples{
-
-}

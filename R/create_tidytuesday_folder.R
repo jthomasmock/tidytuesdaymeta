@@ -6,7 +6,7 @@
 #' @importFrom lubridate wday
 #' @export
 
-create_tidytuesday_folder <- function() {
+create_tt_folder <- function() {
 
     # Logic check if Tuesday calc fails
     if (lubridate::wday(tidytuesdaymeta:::next_tuesday(), label = TRUE) != "Tue") {

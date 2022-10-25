@@ -8,7 +8,7 @@
 #' @param title datasets for creating the data dictionary and flat files
 
 # Create the readme based on data
-create_tidytuesday_readme <- function(title, ...) {
+create_tt_readme <- function(title, ...) {
 
     # Logic check if Tuesday calc fails
     if (lubridate::wday(tidytuesdaymeta::next_tuesday(), label = TRUE) != "Tue") {

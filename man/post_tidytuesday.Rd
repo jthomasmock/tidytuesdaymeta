@@ -4,7 +4,7 @@
 \alias{post_tidytuesday}
 \title{Create the R4DS Community TidyTuesday posts}
 \usage{
-post_tidytuesday(exploring, short_link)
+post_tidytuesday(exploring, short_link, alt_add)
 }
 \description{
 Create the R4DS Community TidyTuesday posts
