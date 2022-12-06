@@ -1,4 +1,5 @@
 #' Create the TidyTuesday data dictionary
+#' @param x an in memory data.frame or tibble.
 #' @importFrom dplyr mutate
 #' @importFrom tibble tibble
 #' @importFrom knitr kable

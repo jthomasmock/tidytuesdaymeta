@@ -1,5 +1,6 @@
 #' Update the data_type.csv file for tidytuesdayR
-#'
+#' @param file_names a vector of file names that are used for this week's datasets, eg `c("elevators.csv", "manufacturers.csv")`
+#' @param delimiter a vector matching the specific data files and their delimiters, eg `c(",", ",")`
 #' @importFrom readr read_csv
 #' @importFrom lubridate year
 #' @importFrom dplyr `%>%`

@@ -6,6 +6,11 @@
 \usage{
 update_data_type(file_names, delimiter)
 }
+\arguments{
+\item{file_names}{a vector of file names that are used for this week's datasets, eg `c("elevators.csv", "manufacturers.csv")`}
+
+\item{delimiter}{a vector matching the specific data files and their delimiters, eg `c(",", ",")`}
+}
 \description{
 Update the data_type.csv file for tidytuesdayR
 }

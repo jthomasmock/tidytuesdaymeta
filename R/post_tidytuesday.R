@@ -1,5 +1,9 @@
 #' Create the R4DS Community TidyTuesday posts
 #'
+#' @param exploring topic for this week
+#' @param short_link short link or URL to the article for this week
+#' @param alt_add a length two vector of strings indicating the alt-text for pic1.png and pic2.png
+#'
 #' @importFrom rtweet post_tweet
 #' @importFrom lubridate today ymd
 #' @importFrom glue glue
@@ -17,7 +21,6 @@ post_tidytuesday <- function(exploring, short_link, alt_add) {
 
   # post the tweet with fill
   rtweet::post_tweet(
-    # token = readRDS("~/Library/Caches/rtweet/auth.rds"),
     status = glue::glue(
       "The @R4DScommunity welcomes you to week {week_num} of #TidyTuesday!  We're exploring {exploring}!
 
@@ -34,8 +37,8 @@ post_tidytuesday <- function(exploring, short_link, alt_add) {
     # The below code is relative to my project
     # You need to specify path to the images for tweeting
     media = c(
-      here::here("static_img", "tt_logo.png"),
-      here::here("static_img", "tt_rules.png"),
+      here::here("inst", "static_img", "tt_logo.png"),
+      here::here("inst", "static_img", "tt_rules.png"),
       here::here(tues_year, week_date, "pic1.png"),
       here::here(tues_year, week_date, "pic2.png")
     ),

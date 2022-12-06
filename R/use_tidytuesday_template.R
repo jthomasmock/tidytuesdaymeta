@@ -3,82 +3,16 @@
 #'
 #' Creates a file from data and a template.
 #' Combine your template file with your data.
-#'
+#' @param title_subject a single topic for this week's data
+#' @param dataset_name a single dataset name in the pattern of `filename` - the .csv will be appended
 #' @return A logical vector indicating if file was modified.
 #' @import whisker
 #' @import lubridate
 #' @export
 
-# tues_date <- date
-# year <- year
-# week_num <- week_num
-#
-# next_week_num <- function() {
-#   # set date for files structure and names
-#   week_date <- tidytuesdaymeta::next_tuesday()
-#   year <- lubridate::year(week_date)
-#   jan_1st <- paste0(year, "-01-01")
-#   jan_1st <- lubridate::ymd(jan_1st)
-#
-#   # Today's date + 1 = tomorrow
-#   week_num <- as.numeric((week_date - jan_1st)) / 7 + 1
-#   round(week_num)
-# }
-#
-# use_tidytuesday_template <- function(
-#                          save_as = template,
-#                          title_subject,
-#                          dataset_name,
-#                          ignore = FALSE,
-#                          open = FALSE) {
-#   # This week's num
-#   week_num <- next_week_num()
-#
-#   # This week's date
-#   tues_date <- tidytuesdaymeta::next_tuesday()
-#
-#   # This year
-#   year <- lubridate::year(week_date)
-#
-#
-#   template_contents <- render_template(title_subject, dataset_name)
-#
-#   new <- write_over(proj_path(save_as), template_contents)
-#
-#   if (ignore) {
-#     use_build_ignore(save_as)
-#   }
-#
-#   if (open && new) {
-#     edit_file(proj_path(save_as))
-#   }
-#
-#   invisible(new)
-# }
-#
-# render_template <- function(template, title_subject, dataset_name) {
-#   template_path <- find_template(template)
-#   strsplit(
-#     whisker::whisker.render(
-#       readLines(template_path, encoding = "UTF-8"), dataset_name), "\n"
-#     )[[1]]
-# }
-#
-# monday_path <- function() {
-#   path <- here::here(
-#     lubridate::year(lubridate::today()),
-#     tidytuesdaymeta::next_tuesday()
-#   )
-#   path
-# }
-
-# use_tidytuesday_readme <- function(open = interactive()) {
-#   use_tidytuesday_template("README.md", open = open)
-# }
-
 use_tidytuesday_readme <- function(title_subject, dataset_name){
 
-  raw_readme <- readLines(here::here("static/readme_template.md"))
+  raw_readme <- readLines(here::here("inst/readme_template.md"))
 
   title_subject <- title_subject
 
@@ -101,12 +35,3 @@ use_tidytuesday_readme <- function(title_subject, dataset_name){
     )
   )
 }
-
-# monday_path <- function() {
-#   path <- here::here(
-#     lubridate::year(lubridate::today()),
-#     tidytuesdaymeta::next_tuesday(),
-#     "readme.md"
-#   )
-#   path
-# }

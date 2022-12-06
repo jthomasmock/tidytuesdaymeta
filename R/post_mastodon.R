@@ -1,5 +1,7 @@
 #' Create the R4DS Community TidyTuesday posts
-#'
+#' @param exploring string indicating the topic
+#' @param short_link string indicating the link to the article used for this week.
+#' @param alt_add A length two vector of strings adding alt text for the included images.
 #' @importFrom rtweet post_tweet
 #' @importFrom lubridate today ymd
 #' @importFrom glue glue
@@ -17,7 +19,7 @@ post_tt_toot <- function(exploring, short_link, alt_add) {
 
   # post the toot with fill
   rtoot::post_toot(
-    token = Sys.getenv("RTOOT_DEFAULT_TOKEN"),
+    # token = Sys.getenv("RTOOT_DEFAULT_TOKEN"),
     status = glue::glue(
       "The @R4DScommunity welcomes you to week {week_num} of #TidyTuesday!  We're exploring {exploring}!
 

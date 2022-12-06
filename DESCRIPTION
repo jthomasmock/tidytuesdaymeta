@@ -1,10 +1,10 @@
 Package: tidytuesdaymeta
 Type: Package
 Title: Helper functions for TidyTuesday
-Version: 0.1.1
+Version: 0.2
 Author: Thomas Mock
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: Assists in creating TidyTuesday datasets
+Maintainer: Thomas Mock <j.thomasmock@gmail.com>
+Description: Assists in creating TidyTuesday datasets.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -18,8 +18,12 @@ Imports:
     knitr,
     lubridate,
     readr,
+    purrr,
+    rstudioapi,
     rtweet,
     rtoot,
     stringr,
     tibble,
+    utils,
     whisker
+URL: https://jthomasmock.github.io/tidytuesdaymeta/

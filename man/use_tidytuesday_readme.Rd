@@ -7,6 +7,11 @@ Thank you Jenny + Sharla + Sharleen!}
 \usage{
 use_tidytuesday_readme(title_subject, dataset_name)
 }
+\arguments{
+\item{title_subject}{a single topic for this week's data}
+
+\item{dataset_name}{a single dataset name in the pattern of `filename` - the .csv will be appended}
+}
 \value{
 A logical vector indicating if file was modified.
 }

@@ -9,7 +9,7 @@
 create_tt_folder <- function() {
 
     # Logic check if Tuesday calc fails
-    if (lubridate::wday(tidytuesdaymeta:::next_tuesday(), label = TRUE) != "Tue") {
+    if (lubridate::wday(next_tuesday(), label = TRUE) != "Tue") {
         stop("Today ain't Tuesday bub!")
     }
 

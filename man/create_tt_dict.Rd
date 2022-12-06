@@ -6,6 +6,9 @@
 \usage{
 create_tt_dict(x)
 }
+\arguments{
+\item{x}{an in memory data.frame or tibble.}
+}
 \description{
 Create the TidyTuesday data dictionary
 }

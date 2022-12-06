@@ -6,6 +6,13 @@
 \usage{
 post_tidytuesday(exploring, short_link, alt_add)
 }
+\arguments{
+\item{exploring}{topic for this week}
+
+\item{short_link}{short link or URL to the article for this week}
+
+\item{alt_add}{a length two vector of strings indicating the alt-text for pic1.png and pic2.png}
+}
 \description{
 Create the R4DS Community TidyTuesday posts
 }
