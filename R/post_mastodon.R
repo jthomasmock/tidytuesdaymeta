@@ -36,8 +36,8 @@ emoji::emoji("news"),
 # The below code is relative to my project
 # You need to specify path to the images for tweeting
 media = c(
-  here::here("static_img", "tt_logo.png"),
-  here::here("static_img", "tt_rules.png"),
+  fs::path_package("static_img", "tt_logo.png", package = "tidytuesdaymeta"),
+  fs::path_package("static_img", "tt_rules.png", package = "tidytuesdaymeta"),
   here::here(tues_year, week_date, "pic1.png"),
   here::here(tues_year, week_date, "pic2.png")
 ),
