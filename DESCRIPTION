@@ -12,7 +12,7 @@ RoxygenNote: 7.2.1
 Imports: 
     dplyr,
     glue,
-    emo,
+    emoji,
     fs,
     here,
     knitr,

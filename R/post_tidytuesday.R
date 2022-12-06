@@ -7,7 +7,7 @@
 #' @importFrom rtweet post_tweet
 #' @importFrom lubridate today ymd
 #' @importFrom glue glue
-#' @importFrom emo ji
+#' @importFrom emoji emoji
 #' @importFrom here here
 #' @export
 #'
@@ -25,10 +25,10 @@ post_tidytuesday <- function(exploring, short_link, alt_add) {
       "The @R4DScommunity welcomes you to week {week_num} of #TidyTuesday!  We're exploring {exploring}!
 
 ",
-      emo::ji("folder"),
+      emoji::emoji("folder"),
       " http://bit.ly/tidyreadme
 ",
-      emo::ji("news"),
+      emoji::emoji("news"),
       " {short_link}
 
 #r4ds #tidyverse #rstats #dataviz"
